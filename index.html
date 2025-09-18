@@ -6,68 +6,246 @@
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 		<link href="./style.css" rel="stylesheet">
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp" rel="stylesheet">
+		<script src="main.js"></script>
 	</head>
 	<body>
-		<nav class="navbar navbar-expand-lg bg-body-tertiary">
-		<div class="container-fluid">
-			<a class="navbar-brand" href="./index.html">The ATLAS Guidelines 1.0</a>
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-				<li class="nav-item">
-				<a class="nav-link active" aria-current="page" href="./about.html">About</a>
-				</li>
-				<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-					Browse
-				</a>
-				<ul class="dropdown-menu">
-					<li><a class="dropdown-item" href="./dse.html">Digital Scholarly Editions</a></li>
-					<li><hr class="dropdown-divider"></li>
-					<li><a class="dropdown-item" href="./lod.html">Linked Open Data</a></li>
-					<li><hr class="dropdown-divider"></li>
-					<li><a class="dropdown-item" href="./ontologies.html">Ontologies</a></li>
-					<li><hr class="dropdown-divider"></li>
-					<li><a class="dropdown-item" href="./sw.html">Software</a></li>
-					<li><hr class="dropdown-divider"></li>
-					<li><a class="dropdown-item" href="./tc.html">Text Collections</a></li>
-					<li><hr class="dropdown-divider"></li>
-					<li><a class="dropdown-item" href="./general.html">General Recommendations</a></li>
+		<nav class="custom-navbar navbar navbar-expand-lg">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="./index.html">The ATLAS Guidelines 1.0</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" 
+					aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarContent">
+				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+					<a class="nav-link" href="./about.html">About</a>
+					</li>
+					<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						Browse
+					</a>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="./dse.html">Digital Scholarly Editions</a></li>
+						<li><a class="dropdown-item" href="./lod.html">Linked Open Data</a></li>
+						<li><a class="dropdown-item" href="./ontologies.html">Ontologies</a></li>
+						<li><a class="dropdown-item" href="./sw.html">Software</a></li>
+						<li><a class="dropdown-item" href="./tc.html">Text Collections</a></li>
+						<li><a class="dropdown-item" href="./general.html">General Recommendations</a></li>
+					</ul>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link" href="./external-resources.html">External Resources</a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link" href="./credits.html">Credits</a>
+					</li>
 				</ul>
-				</li>
-				<li class="nav-item">
-				<a class="nav-link" href="./external-resources.html">External Resources</a>
-				</li>
-				<li class="nav-item">
-				<a class="nav-link" href="./credits.html">Credits</a>
-				</li>
-			</ul>
+				</div>
 			</div>
-		</div>
 		</nav>
+
+		<header>
+			<div class="row col-12">
+				<div class="main-title container col-lg-6 col-md-12 col-sm-12">
+					<div class="main-title col-10">
+						<span class="page-title">
+							The ATLAS Guidelines<span class="dot">.</span>
+						</span>
+						<p class="page-subtitle">
+							Creating FAIR Research Products in the Digital Humanities
+						</p>
+						
+						<div class="button-container">
+							<a href="./general.html" class="button-glass">Explore</a>
+							<a href="./general.html" class="button-atlas">ATLAS</a>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-container col-lg-6 col-md-12 col-sm-12">
+					<button class="carousel-btn prev">&#10094;</button>
+					<div class="recommendation-links">
+						<div class="recommendation-link active">
+							<h3>General Recommendations</h3>
+							<p>From FAIR to top-notch: tips to further enhance research products’ quality</p>
+							<a href="./general.html" class="carousel-btn-link">Go to page</a>
+						</div>
+
+						<div class="recommendation-link">
+							<h3>Digital Scholarly Editions</h3>
+							<p>Guidelines for building and maintaining digital scholarly editions</p>
+							<a href="./dse.html" class="carousel-btn-link">Go to page</a>
+						</div>
+
+						<div class="recommendation-link">
+							<h3>Linked Open Data</h3>
+							<p>Best practices for producing and sharing Linked Open Data</p>
+							<a href="./lod.html" class="carousel-btn-link">Go to page</a>
+						</div>
+
+						<div class="recommendation-link">
+							<h3>Ontologies</h3>
+							<p>Creating and publishing ontologies for knowledge representation</p>
+							<a href="./ontologies.html" class="carousel-btn-link">Go to page</a>
+						</div>
+
+						<div class="recommendation-link">
+							<h3>Software</h3>
+							<p>Recommendations for sustainable and reusable research software</p>
+							<a href="./sw.html" class="carousel-btn-link">Go to page</a>
+						</div>
+
+						<div class="recommendation-link">
+							<h3>Text Collections</h3>
+							<p>Managing and sharing curated text collections in FAIR ways</p>
+							<a href="./tc.html" class="carousel-btn-link">Go to page</a>
+						</div>
+						</div>
+
+					<button class="carousel-btn next">&#10095;</button>
+				</div>
+			</div>
+		</header>
 		<article id="" class="page sans">
-			<div class="main-title container">
-				<span class="page-title">The ATLAS Guidelines<br>for creating FAIR Research Products<br>in the Digital Humanities <span class="dot"></span></span>
-			</div>
-			<div class="page-body recommendation-links">
-				<div class="recommendation-link">
-					<a href="./dse.html">Digital Scholarly Editions</a>
-				</div>
-				<div class="recommendation-link">
-					<a href="./lod.html">Linked Open Data</a>
-				</div>
-				<div class="recommendation-link">
-					<a href="./ontologies.html">Ontologies</a>
-				</div>
-				<div class="recommendation-link">
-					<a href="./sw.html">Software</a>
-				</div>
-				<div class="recommendation-link">
-					<a href="./tc.html">Text Collections</a>
-				</div>
-				<div class="recommendation-link">
-					<a href="./general.html">General Recommendations</a>
-				</div>
-			</div>
+			<section class="row col-lg-12">
+				<section class="col-lg-6 col-md-6 col-sm-10" style="padding-right: 3em;">
+					<h1>
+						<span class="topic">WHAT DO WE DO</span><br>
+						Supporting FAIR Data in the Humanities
+					</h1>
+					<p>
+						The ALLEA report “Sustainable and FAIR Data Sharing in the Humanities” provides key recommendations to make digital data in the humanities “Findable, Accessible, Interoperable and Reusable”, in line with the FAIR principles. The document is designed as a practical guide to help scholars, research funders, professionals and policymakers navigate the shift towards a sustainable data sharing culture.
+					</p>
+					<p class="reference">
+						<span class="bold">Source: </span> <a href="https://doi.org/10.7486/DRI.tq582c863" target="_blank">Sustainable and FAIR Data Sharing in the Humanities: Recommendations of the ALLEA Working Group E-Humanities </a>
+					</p>
+				</section>
+				<section class="col-lg-6 col-md-6 col-sm-10">
+					<div class="acc">
+						<div class="acc-item">
+						<button class="acc-header">
+							Identify <span class="icon">+</span>
+						</button>
+						<div class="acc-content">
+							<p>Contenuto extra per la sezione 1.</p>
+						</div>
+						</div>
+
+						<div class="acc-item">
+						<button class="acc-header">
+							Plan <span class="icon">+</span>
+						</button>
+						<div class="acc-content">
+							<p>Contenuto extra per la sezione 2.</p>
+						</div>
+						</div>
+
+						<div class="acc-item">
+						<button class="acc-header">
+							Collect/Produce & Structure & Store <span class="icon">+</span>
+						</button>
+						<div class="acc-content">
+							<p>Contenuto extra per la sezione 3.</p>
+						</div>
+						</div>
+
+						<div class="acc-item">
+						<button class="acc-header">
+							Deposit for Preservation, Cite & Share <span class="icon">+</span>
+						</button>
+						<div class="acc-content">
+							<p>Contenuto extra per la sezione 4.</p>
+						</div>
+						</div>
+
+						<div class="acc-item">
+						<button class="acc-header">
+							Dissemination <span class="icon">+</span>
+						</button>
+						<div class="acc-content">
+							<p>Contenuto extra per la sezione 5.</p>
+						</div>
+						</div>
+					</div>
+				</section>
+			</section>
+			<hr>
+			<section class="row col-lg-12">
+				<section class="col-lg-12 col-md-12 col-sm-12" style="padding-right: 3em;">
+					<h1>
+						<span class="topic">WHAT DO WE FOCUS ON</span><br>
+						Exploring Practices Across <span style="color: var(--atlas)">Research Products</span>
+					</h1>
+					<p>
+				</section>
+				<section class="col-lg-12 col-md-12 col-sm-12">
+					<div class="row row-cards">
+						<div class="col-lg-2 col-md-4 col-sm-6 res-card active" data-content="content1">
+						<span class="material-symbols-sharp card-icon">lightbulb</span>
+						<p class="card-title">General Recommendations</p>
+						</div>
+
+						<div class="col-lg-2 col-md-4 col-sm-6 res-card" data-content="content2">
+						<span class="material-symbols-sharp card-icon">laptop</span>
+						<p class="card-title">Digital Scholarly Editions</p>
+						</div>
+
+						<div class="col-lg-2 col-md-4 col-sm-6 res-card" data-content="content3">
+						<span class="material-symbols-sharp card-icon">menu_book</span>
+						<p class="card-title">Text Collections</p>
+						</div>
+
+						<div class="col-lg-2 col-md-4 col-sm-6 res-card" data-content="content4">
+						<span class="material-symbols-sharp card-icon">share</span>
+						<p class="card-title">Linked Open Data</p>
+						</div>
+
+						<div class="col-lg-2 col-md-4 col-sm-6 res-card" data-content="content5">
+						<span class="material-symbols-sharp card-icon">account_tree</span>
+						<p class="card-title">Ontologies</p>
+						</div>
+
+						<div class="col-lg-2 col-md-4 col-sm-6 res-card" data-content="content6">
+						<span class="material-symbols-sharp card-icon">code</span>
+						<p class="card-title">Software</p>
+						</div>
+
+
+					</div>
+					<div class="row mt-3">
+						<div class="row-content col-12">
+						<div class="card-content-box">
+							<div class="card-content active" id="content1">
+							<p>Contenuto di General Recommendations (già attivo)</p>
+							</div>
+							<div class="card-content" id="content2">
+							<p>Contenuto di Digital Scholarly Editions</p>
+							</div>
+							<div class="card-content" id="content3">
+							<p>Contenuto di Text Collections</p>
+							</div>
+							<div class="card-content" id="content4">
+							<p>Contenuto di Linked Open Data</p>
+							</div>
+							<div class="card-content" id="content5">
+							<p>Contenuto di Ontologies</p>
+							</div>
+							<div class="card-content" id="content6">
+							<p>Contenuto di Software</p>
+							</div>
+						</div>
+						</div>
+					</div>
+				</section>
+			</section>
+		</article>
+		<footer>
 			<div class="logos">
 				<img src="img/ue.png" alt="Logo Finanziato dall'Unione Europea" aria-label="Finanziato dall'Unione Europea"/>
 				<span class="line"></span>
@@ -75,6 +253,6 @@
 				<span class="line"></span>
 				<img src="img/italia.png" alt="Logo Italia Domani" aria-label="Italia Domani"/>
 			</div>
-		</article>
+		</footer>
 	</body>
 </html>
