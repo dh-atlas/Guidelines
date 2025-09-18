@@ -1,0 +1,117 @@
+:root {
+  --atlas: #D5AF4B;
+  --identify: #00ffec;
+  --produce: #ffff00;
+  --plan: #66ff66;
+  --disseminate: #ff3300;
+  --deposit: #ff9933;
+  --indepth: rgb(235, 233, 233);
+}
+
+div.page-body {
+    padding: 2em;
+}
+
+header {
+    background-color: var(--atlas);
+    text-align: center;
+    padding: 3em 1em;
+}
+
+.tag {
+    font-weight: bold;
+    display: inline-block;
+    padding: 0.3em;
+    border: 0.5px solid black;
+    margin: 0.6em;
+    -webkit-box-shadow: 2px 2px 5px 1px #000000; 
+    box-shadow: 2px 2px 5px 1px #000000;
+    &.disseminate {
+        background-color: var(--disseminate);
+    }
+    &.plan {
+        background-color: var(--plan);
+    }
+    &.produce {
+        background-color: var(--produce);
+    }
+    &.deposit {
+        background-color: var(--deposit);
+    }
+    &.identify {
+        background-color: var(--identify);
+    } 
+}
+
+h2 {
+    margin-top: 2em;
+}
+
+.anchor-link {
+    padding: 0 .175rem;
+    font-weight: 400;
+    color: #0d6efd80;
+    text-decoration: none;
+    opacity: 1;
+}
+
+div[type="in-depth"] {
+    background-color: var(--indepth);
+    border-radius: 10px;
+    font-size: small;
+    padding: 1.2em;
+}
+
+.recommendation-link {
+    border-radius: 50%;
+    height: 220px;
+    width: 220px;
+    text-align: center;
+    background-color: var(--atlas);
+    display: flex; justify-content: center; align-items: center;
+    margin: 1em;
+    a {
+        color: black !important;
+        font-weight: bolder;
+        font-size: x-large;
+    }
+}
+
+.recommendation-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2em;
+}
+
+.main-title {
+    padding: 1.5em;
+    font-size: 3em;
+    font-weight: bold;
+
+    .dot {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: var(--atlas);
+    }
+}
+
+.logos {
+    background-color: #2B65B0;
+    display: flex;
+    flex-direction: row;
+    padding: 1em;
+    justify-content: space-around;
+    margin-top: 2em;
+    img {
+        max-height: 70px;
+    }
+    .line {
+        border-left: 2px solid white;
+        height: 70px;
+        width: 3px;
+    }
+}

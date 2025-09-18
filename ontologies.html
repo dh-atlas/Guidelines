@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>Ontologies</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+		<link href="./style.css" rel="stylesheet">
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg bg-body-tertiary">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="./index.html">The ATLAS Guidelines 1.0</a>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				<li class="nav-item">
+				<a class="nav-link active" aria-current="page" href="./about.html">About</a>
+				</li>
+				<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					Browse
+				</a>
+				<ul class="dropdown-menu">
+					<li><a class="dropdown-item" href="./dse.html">Digital Scholarly Editions</a></li>
+					<li><hr class="dropdown-divider"></li>
+					<li><a class="dropdown-item" href="./lod.html">Linked Open Data</a></li>
+					<li><hr class="dropdown-divider"></li>
+					<li><a class="dropdown-item" href="./ontologies.html">Ontologies</a></li>
+					<li><hr class="dropdown-divider"></li>
+					<li><a class="dropdown-item" href="./sw.html">Software</a></li>
+					<li><hr class="dropdown-divider"></li>
+					<li><a class="dropdown-item" href="./tc.html">Text Collections</a></li>
+					<li><hr class="dropdown-divider"></li>
+					<li><a class="dropdown-item" href="./general.html">General Recommendations</a></li>
+				</ul>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" href="./external-resources.html">External Resources</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" href="./credits.html">Credits</a>
+				</li>
+			</ul>
+			</div>
+		</div>
+		</nav>
+		<article id="" class="page sans">
+			<header>
+				<h1 class="page-title">Ontologies</h1>
+			</header>
+			<div class="page-body container">
+				<div class="recommendation-block">
+					<h2 id="ont-1" class="recommendation">
+						1) Consider reusing existing ontologies to build upon established knowledge structures.</h2>
+					<a class="anchor-link" aria-label="Link to ONTOLOGIES recommendation 1" href="#ont-1">#</a>
+					<span class="tag identify">IDENTIFY</span> <span class="tag plan">PLAN</span>
+					<p id="" class="recommendation-tip-body">
+						Numerous ontologies have been developed for cultural heritage and humanities disciplines in recent years.
+						Before creating your own ontology from scratch, examine existing ones to evaluate whether and how they could
+						serve your research needs. This approach not only speeds up development but also results in a more robust final product.
+					</p>
+					<ul id="" class="recommendation-tip-body">
+						<li>Domain-relevant models, ontologies and vocabularies, used on a national and international level:
+							<a target="_blank" href="https://www.cidoc-crm.org/">CIDOC-CRM</a>,
+							<a target="_blank" href="http://xmlns.com/foaf/spec/">FOAF</a>,
+							<a target="_blank" href="http://schema.org/">schema.org</a>,
+							<a target="_blank" href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/">Dublin Core</a>,
+							<a target="_blank" href="https://cidoc-crm.org/lrmoo/home-0">LRMOO</a>,
+							<a target="_blank" href="https://schema.datacite.org/">DataCite</a>,
+							<a target="_blank" href="https://www.w3.org/TR/vocab-dcat-2/#Property:resource_type">DCAT</a>,
+							<a target="_blank" href="http://www.sparontologies.net/">SPAR Ontologies, and</a>
+							<a target="_blank" href="https://dati.beniculturali.it/arco/index.php">ArCO</a>.
+						</li>
+						<li>
+							To explore existing models, use the
+							<a target="_blank" href="https://lov.linkeddata.es/dataset/lov">LOV (Linked Open Vocabularies)</a>
+							database, <a target="_blank" href="https://bartoc.org/">BARTOC (Basic Registry of Thesauri, Ontologies and Classifications)</a>
+							or the <a target="_blank" href="https://h-setis.cnr.it/ontologies/">H-SeTIS (Heritage – Semantic Tools and Interoperability Survey)</a>
+							database specific for the heritage domain.
+						</li>
+					</ul>
+				</div>
+
+				<div class="recommendation-block">
+					<h2 id="ont-2" class="recommendation">
+						2) Engage the user community and domain experts throughout the design phase to create more robust and relevant ontologies.
+					<a class="anchor-link" aria-label="Link to ONTOLOGIES recommendation 2" href="#ont-2">#</a>
+					</h2>
+					<span class="tag plan">PLAN</span> <span class="tag produce">PRODUCE</span>
+					<p id="" class="recommendation-tip-body">
+						The first step in creating an ontology is defining its domain—the scope of reality it must represent—and identifying “competency questions.”
+						These are user-oriented questions that help scope the ontology by determining what users want to learn when exploring and querying the ontology
+						and its knowledge base.
+					</p>
+					<p id="" class="recommendation-tip-body">
+						Creating an effective ontology requires deep domain knowledge. Involving domain experts and community members early in the process helps
+						identify precise terminology and appropriate properties to describe domain entities, their relationships, and competency questions.
+						This collaborative approach ensures the ontology will be both useful and reusable.
+					</p>
+					<p id="" class="recommendation-tip-body">
+						Surveys and focus groups serve as effective tools for gathering domain expert feedback.
+					</p>
+				</div>
+
+				<div class="recommendation-block">
+					<h2 id="ont-3" class="recommendation">
+						3) Adhere to shared methodologies for ontology design and implementation to ensure consistency and best practices.
+					<a class="anchor-link" aria-label="Link to ONTOLOGIES recommendation 3" href="#ont-3">#</a>
+					</h2>
+					<span class="tag plan">PLAN</span> <span class="tag produce">PRODUCE</span>
+					<p id="" class="recommendation-tip-body">
+						The literature offers several established methodologies and best practices for creating ontologies:
+					</p>
+					<ul id="" class="recommendation-tip-body">
+						<li>
+							<a target="_blank" href="https://protege.stanford.edu/publications/ontology_development/ontology101.pdf">Ontology Development 101: A guide to creating your first ontology</a>,
+							a comprehensive guide for beginners learning to model domains through ontologies;
+						</li>
+						<li><a target="_blank" href="https://essepuntato.it/papers/samod-owled2016.html">Simplified Agile Methodology for Ontology Development</a>
+							(SAMOD), an advanced approach developed by the SPAR Ontologies team;
+						</li>
+						<li>
+							<a target="_blank" href="https://lot.linkeddata.es/">LOT (Linked Open Terms) Methodology</a>
+							an industrial method for developing ontologies and vocabularies, that encompasses four main phases: requirements specification,
+							implementation, publication and maintenance;
+						</li>
+						<li>
+							<a target="_blank" href="https://doi.org/10.1007/978-3-642-24794-1_2">The NeOn Methodology for Ontology Engineering</a>
+							proposes nine scenarios for building ontologies and networks, focusing on resource reuse, reengineering, and collaborative development.
+						</li>
+					</ul>
+					<p id="" class="recommendation-tip-body">
+						When facing common challenges during domain modeling, you can apply <a target="_blank" href="http://ontologydesignpatterns.org/index.php/Ontology_Design_Patterns_._org_(ODP)">Ontology Design Patterns</a>
+						as proven solutions.
+					</p>
+					<p id="" class="recommendation-tip-body">
+						For the practical development of ontologies, several graphical editors are available, including <a target="_blank" href="https://protege.stanford.edu/">Protégé</a>,
+						<a target="_blank" href="https://www.cognitum.eu/semantics/FluentEditor/">Fluent Editor</a>,
+						and <a target="_blank" href="https://owlgred.lumii.lv/">OWLGrEd</a>.
+						Antoher popular development platform for managing OWL ontologies is <a target="_blank" href="https://vocbench.uniroma2.it/">VocBench</a><strong>.</strong>
+						For more options, see this <a target="_blank" href="https://gbv.github.io/bartoc-vocabulary-software/">comprehensive list of editors and development environments</a>.
+					</p>
+					<h3 id="" class="recommendation-tip-title">Standard formats</h3>
+					<p id="" class="recommendation-tip-body">
+						As the primary developer of Semantic Web technologies, W3C has created several standard formats for expressing ontologies:
+					</p>
+					<ul id="" class="recommendation-tip-body">
+						<li>
+							<strong><a target="_blank" href="https://www.w3.org/TR/rdf-syntax-grammar/">RDF XML</a></strong> (Resource Description Framework
+							XML Syntax) serves as the foundation for many ontologies in the Semantic Web. It uses XML syntax to express relationships through
+							triples (subject, predicate, object).
+						</li>
+						<li>
+							<strong><a target="_blank" href="https://www.w3.org/2001/sw/wiki/OWL">OWL</a></strong> (Web Ontology Language) represents
+							complex knowledge about things and their relationships. Based on computational logic, it enables programs to verify consistency
+							and reveal implicit knowledge.
+						</li>
+						<li>
+							<strong><a target="_blank" href="https://www.w3.org/TR/turtle/">Turtle</a></strong> provides a simplified, human-readable
+							syntax for RDF that is more concise than RDF-XML.
+						</li>
+						<li>
+							<strong><a target="_blank" href="https://www.w3.org/2001/sw/wiki/JSON-LD">JSON-LD</a></strong> (A JSON-based Serialisation for
+							Linked Data) integrates Linked Data into web environments through JSON compatibility.
+						</li>
+					</ul>
+					<p id="" class="recommendation-tip-body">
+						Other important <a target="_blank" href="https://www.w3.org/2001/sw/wiki/Main_Page">W3C Semantic Web Standards</a> include:
+					</p>
+					<ul id="" class="recommendation-tip-body">
+						<li>
+							<strong><a target="_blank" href="https://www.w3.org/2001/sw/wiki/SKOS">SKOS</a></strong> (Simple Knowledge Organization System)
+							for creating vocabularies and taxonomies;
+						</li>
+						<li>
+							<strong><a target="_blank" href="https://www.w3.org/2001/sw/wiki/SPARQL">SPARQL</a></strong> (SPARQL Query Language for RDF)
+							for querying diverse RDF data sources and retrieving both result sets and RDF graphs.
+						</li>
+					</ul>
+					<h3 id="" class="recommendation-tip-title">
+						Guidelines for producing FAIR ontologies
+					</h3>
+					<p id="" class="recommendation-tip-body">
+						The scientific literature offers several publications with clear, precise guidelines for producing FAIR ontologies. These
+						cover essential topics like prefix and namespace conventions, as well as documentation publishing methods, including:
+					</p>
+					<ul id="" class="recommendation-tip-body">
+						<li>Garijo, Daniel, and María Poveda-Villalón. <em>Best Practices for Implementing FAIR Vocabularies and Ontologies on the Web</em>.
+							arXiv, 2020, <a target="_blank" href="https://doi.org/10.48550/ARXIV.2003.13084">https://doi.org/10.48550/ARXIV.2003.13084</a>.
+						</li>
+						<li>Hugo, Wim, et al. <em>D2.5 FAIR Semantics Recommendations Second Iteration</em>. Dec. 2020,
+							<a target="_blank" href="https://doi.org/10.5281/ZENODO.4314320">https://doi.org/10.5281/ZENODO.4314320</a>.
+						</li>
+						<li>Poveda-Villalón, María, et al. “Coming to Terms with FAIR Ontologies.” <em>Knowledge Engineering and Knowledge Management</em>,
+							edited by C. Maria Keet and Michel Dumontier, vol. 12387, Springer International Publishing, 2020, pp. 255–70,
+							<a target="_blank" href="https://doi.org/10.1007/978-3-030-61244-3_18">https://doi.org/10.1007/978-3-030-61244-3_18</a>.
+						</li>
+					</ul>
+					<p id="" class="recommendation-tip-body">
+						To evaluate whether your ontology adheres to the good practices outlined in these publications, you can use tools such as
+						<a target="_blank" href="https://github.com/agroportal/fairness">O’FAIRe (Ontology FAIRness Evaluator)</a> and
+						<a target="_blank" href="https://w3id.org/foops">FOOPS! (Ontology Pitfall Scanner for FAIR)</a>.
+					</p>
+					<p id="" class="recommendation-tip-body">
+						Another effective tool designed specifically for SKOS vocabularies is
+						<a target="_blank" href="https://skos-play.sparna.fr/play/">SKOS Play!</a>,
+						which enables users to validate and convert SKOS files to PDF and HTML formats, and also generates SKOS files from Excel
+						spreadsheets.
+					</p>
+				</div>
+
+				<div class="recommendation-block">
+					<h2 id="ont-4" class="recommendation">
+						4) Foster interoperability with existing ontologies and facilitate integration through
+							comprehensive mapping.
+					<a class="anchor-link" aria-label="Link to ONTOLOGIES recommendation 4" href="#ont-4">#</a>
+					</h2>
+					<span class="tag produce">PRODUCE</span>
+					<p id="" class="recommendation-tip-body">
+						By associating each element of your ontology to the elements of other existing models, you enable easy integration of
+						data modeled according to your ontology in other datasets. Comprehensive mapping is also useful to facilitate data
+						maintenance and the handling of legacy data.
+					</p>
+					<ul id="" class="recommendation-tip-body">
+						<li>
+							Many W3C models, such as DCAT, include mapping recommendations.
+						</li>
+						<li>Standards and references:
+							<ul>
+								<li id="">
+									<a target="_blank" href="https://rml.io/specs/rml/">RDF Mapping Language (RML)</a>
+								</li>
+								<li id="">
+									<a target="_blank" href="https://mapping-commons.github.io/sssom/">
+										Simple Standard for Sharing Ontological Mappings (SSSOM)
+									</a>
+								</li>
+								<li id="" class="recommendation-tip-link">
+									<a target="_blank" href="https://i-adopt.github.io/">InteroperAble Descriptions of Observable Property Terminology WG (RDA I-ADOPT WG)</a>
+								</li>
+							</ul>
+						</li>
+						<li>Article: <a target="_blank" href="https://research.manchester.ac.uk/en/publications/moving-towards-fair-mappings-and-crosswalks">“Moving towards FAIR mappings and crosswalks”</a>.</li>
+					</ul>
+
+				</div>
+
+				<div class="recommendation-block">
+					<h2 id="ont-5" class="recommendation">
+						5) Provide users with detailed documentation, complete with practical usage examples and intuitive graphical representations of the ontology.
+					<a class="anchor-link" aria-label="Link to ONTOLOGIES recommendation 5" href="#ont-5">#</a>
+					</h2>
+					<span class="tag produce">PRODUCE</span> <span class="tag disseminate">DISSEMINATE</span>
+					<p id="" class="recommendation-tip-body">
+						Documentation should be complete and accurate, beginning with clear definitions of all ontology elements. These definitions can incorporate
+						references to external sources and specific examples to clarify concepts and properties.
+					</p>
+					<p id="" class="recommendation-tip-body">
+						To clearly demonstrate the ontology’s utility, include practical examples showing how it represents real-world objects familiar to your community.
+					</p>
+					<ul id="" class="recommendation-tip-body">
+						<li>
+							Web environment for visualising and customising ontology documentation: <a target="_blank" href="https://essepuntato.it/lode/">LODE</a>,
+							<a target="_blank" href="https://github.com/VisualDataWeb/WebVOWL">WebVOWL</a>, <a target="_blank" href="https://dgarijo.github.io/Widoco/">Widoco</a>.
+							<a target="_blank" href="https://www.w3.org/2001/sw/wiki/Category:Visualizer">List of visualisation tools</a>.
+						</li>
+					</ul>
+					<p id="" class="recommendation-tip-body">
+						Graphical representations effectively showcase your ontology’s classes and their relationships. You can produce simple UML class diagrams or
+						use specific tools for ontologies such as <a target="_blank" href="https://essepuntato.it/graffoo/">Graffoo</a> and
+						<a target="_blank" href="https://www.cognitum.eu/semantics/FluentEditor/">Fluent Editor</a>.
+					</p>
+				</div>
+						
+				<div class="recommendation-block">
+					<h2 id="ont-6" class="recommendation">
+						6) Ensure the permanence of URIs, considering the use of services for long-term stability. Conduct regular maintenance checks to ensure the
+						continued functionality of links to your ontology.
+					<a class="anchor-link" aria-label="Link to ONTOLOGIES recommendation 6" href="#ont-6">#</a>
+					</h2>
+					<span class="tag deposit">DEPOSIT</span>
+					<p id="" class="recommendation-tip-body">
+						Ensuring your ontology’s long-term accessibility and reusability depends critically on functioning URIs. Regular maintenance checks are
+						essential to keep the ontology ready to use
+					</p>
+					<p id="" class="recommendation-tip-body"><a target="_blank" href="https://w3id.org/">W3id</a>,
+						developed by the W3C Permanent Identifier Community Group, provides secure, permanent URL redirection services for web applications.
+						As a result, the ontology maintains its stability and reliability, making it more appealing for reuse.
+					</p>
+				</div>
+
+				<div class="recommendation-block">
+					<h2 id="ont-7" class="recommendation">
+						7) Utilise external services for ontology publication to guarantee long-term accessibility and preservation.
+					<a class="anchor-link" aria-label="Link to ONTOLOGIES recommendation 7" href="#ont-7">#</a>
+					</h2>
+					<span class="tag deposit">DEPOSIT</span>
+					<p id="" class="recommendation-tip-body">
+						To publish your ontology, you can leverage existing online tools. This approach allows researchers to concentrate on development while
+						simplifying long-term maintenance.</p>
+					<ul id="" class="recommendation-tip-body">
+						<li>Workbench for storing and searching:
+							<a target="_blank" href="https://graphdb.ontotext.com/documentation/10.7/index.html">graphdb</a>,
+							<a target="_blank" href="https://vos.openlinksw.com/owiki/wiki/VOS">Virtuoso</a>.
+							<a target="_blank" href="https://www.w3.org/2001/sw/wiki/Category:Triple_Store">List of Triple Stores</a>.
+						</li>
+					</ul>
+					<p id="" class="recommendation-tip-body">
+						Additionally, we recommend storing the ontology in multiple formats within trustworthy repositories.
+					</p>
+				</div>
+				</div>
+
+			</article>
+		</body>
+	</html>

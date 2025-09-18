@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>General Recommendations</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+		<link href="./style.css" rel="stylesheet">
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg bg-body-tertiary">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="./index.html">The ATLAS Guidelines 1.0</a>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				<li class="nav-item">
+				<a class="nav-link active" aria-current="page" href="./about.html">About</a>
+				</li>
+				<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					Browse
+				</a>
+				<ul class="dropdown-menu">
+					<li><a class="dropdown-item" href="./dse.html">Digital Scholarly Editions</a></li>
+					<li><hr class="dropdown-divider"></li>
+					<li><a class="dropdown-item" href="./lod.html">Linked Open Data</a></li>
+					<li><hr class="dropdown-divider"></li>
+					<li><a class="dropdown-item" href="./ontologies.html">Ontologies</a></li>
+					<li><hr class="dropdown-divider"></li>
+					<li><a class="dropdown-item" href="./sw.html">Software</a></li>
+					<li><hr class="dropdown-divider"></li>
+					<li><a class="dropdown-item" href="./tc.html">Text Collections</a></li>
+					<li><hr class="dropdown-divider"></li>
+					<li><a class="dropdown-item" href="./general.html">General Recommendations</a></li>
+				</ul>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" href="./external-resources.html">External Resources</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" href="./credits.html">Credits</a>
+				</li>
+			</ul>
+			</div>
+		</div>
+		</nav>
+		<article id="" class="page sans">
+			<header>
+				<h1 class="page-title">From FAIR to top-notch: tips to further enhance research products’ quality</h1>
+			</header>
+			<div class="page-body container">
+				<p id="" class="">
+					<!-- Questo paragrafo può essere eliminato -->
+					While analysing the pilot research products of the ATLAS project, we identified common shortcomings in how the products were
+					published and released to the audience, making it difficult for users to find key information such as the licence, and to
+					understand how the product could be cited and used. These final recommendations are designed to help researchers overcome
+					these problems and are applicable to all research product types, offering further tips that are not in the ALLEA guidelines.
+				</p>
+
+				<div class="recommendation-block">
+					<h2 id="gen-1" class="recommendation">
+					Easy to find
+					<a class="anchor-link" aria-label="Link to this section: Easy to find" href="#gen-1">#</a>
+					</h2>
+					<ul id="" class="recommendation-tip-body">
+						<li>
+							Choose a clear, descriptive title for your research product, including relevant keywords. If using an acronym, provide the full
+							name for clarity.
+						</li>
+						<li>
+							Create a landing page for the research product, where the following information is prominently displayed:
+							<ul id="">
+								<li>access points to the data;</li>
+								<li >licence;</li>
+								<li >version number;</li>
+								<li >status (e.g., completed, under development).</li>
+							</ul>
+							You don’t need to create a website if you can use existing platforms and solutions, such as the description associated with each
+							record in Zenodo or a README file for GitHub repositories. Choose a platform that allows you to edit this information easily,
+							so you can keep your landing page updated at all times. If you wish to create a website, practical and low-cost solutions are <a href="https://pages.github.com/">GitHub Pages</a>,
+							<a href="https://www.newgooglesites.com/home">Google Sites</a>, and <a href="https://wordpress.org/">Wordpress</a>. <a href="https://tapor.ca/home">Explore other tools in TAPoR</a>.
+						</li>
+					</ul>
+				</div>
+				<div class="recommendation-block">
+					<h2 id="gen-2" class="recommendation">
+						Easy to cite
+					<a class="anchor-link" aria-label="Link to this section: Easy to cite" href="#gen-2">#</a>
+					</h2>
+					<ul id="" class="recommendation-tip-body">
+						<li>Provide complete credits, including names, affiliations and persistent identifiers—when available—of creators, collaborators,
+							and institutional partners. Include contact information for users to report issues or suggest collaborations.
+						</li>
+						<li>Enhance citability by providing citation guidelines.</li>
+						<li>For products developed within a research project, describe the project or provide a link to its landing page, explaining
+							how the product contributes to the project’s goals. For time-limited projects, specify the end date and outline future
+							plans for preservation and maintenance.
+						</li>
+						<li>Clearly state the licences of your research product’s website/landing page, and all its by-products.</li>
+					</ul>
+				</div>
+
+				<div class="recommendation-block">
+					<h2 id="gen-3" class="recommendation">
+						Easy to use
+					<a class="anchor-link" aria-label="Link to this section: Easy to use" href="#gen-3">#</a>
+					</h2>
+					<ul id="" class="recommendation-tip-body">
+						<li>In the documentation describe the research product’s design and development process, including used tools and applied methodologies.
+							If you have published this information as articles or development reports, provide links to these publications.
+						</li>
+						<li>Provide a user guide and examples demonstrating how to utilise the research product.</li>
+						<li>To ensure efficient documentation management, maintain a single source document in a repository and generate different format versions
+							from it as needed. Common tools for building documentation for a research project are <a href="https://www.gitbook.com/">GitBook</a> and <a href="https://www.mediawiki.org/wiki/MediaWiki">WikiMedia</a>.
+						</li>
+						<li>Offer metadata and documentation in English (in addition to other languages) to reach a broader audience.</li>
+					</ul>
+				</div>
+
+			</div>
+		</article>
+	</body>
+</html>

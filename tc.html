@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>Text Collections</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+		<link href="./style.css" rel="stylesheet">
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg bg-body-tertiary">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="./index.html">The ATLAS Guidelines 1.0</a>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				<li class="nav-item">
+				<a class="nav-link active" aria-current="page" href="./about.html">About</a>
+				</li>
+				<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					Browse
+				</a>
+				<ul class="dropdown-menu">
+					<li><a class="dropdown-item" href="./dse.html">Digital Scholarly Editions</a></li>
+					<li><hr class="dropdown-divider"></li>
+					<li><a class="dropdown-item" href="./lod.html">Linked Open Data</a></li>
+					<li><hr class="dropdown-divider"></li>
+					<li><a class="dropdown-item" href="./ontologies.html">Ontologies</a></li>
+					<li><hr class="dropdown-divider"></li>
+					<li><a class="dropdown-item" href="./sw.html">Software</a></li>
+					<li><hr class="dropdown-divider"></li>
+					<li><a class="dropdown-item" href="./tc.html">Text Collections</a></li>
+					<li><hr class="dropdown-divider"></li>
+					<li><a class="dropdown-item" href="./general.html">General Recommendations</a></li>
+				</ul>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" href="./external-resources.html">External Resources</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" href="./credits.html">Credits</a>
+				</li>
+			</ul>
+			</div>
+		</div>
+		</nav>
+		<article id="" class="page sans">
+			<header>
+				<h1 class="page-title">Text Collections</h1>
+			</header>
+			<div class="page-body container">
+				<div class="recommendation-block">
+					<h2 id="tc-1" class="recommendation">
+						1) Encode texts in standard formats, preferring XML/TEI or other appropriate schemas for literary texts, to ensure interoperability and facilitate re-use.
+					<a class="anchor-link" aria-label="Link to TEXT COLLECTIONS recommendation 1" href="#tc-1">#</a>
+					</h2>
+					<span class="tag produce">PRODUCE</span>
+					<h3 id="" class="recommendation-tip-title">Standard formats</h3>
+					<p id="" class="recommendation-tip-body">
+						Based on a collection’s scientific objectives and technical requirements, texts can be prepared in different formats. A common approach, especially
+						for Natural Language Processing (NLP), is <strong>plain text</strong> with accompanying metadata and annotations in structured formats like CSV and
+						JSON. In these cases, <strong>Unicode</strong> character encoding is essential to ensure full accessibility, reusability, and interoperability.
+					</p>
+					<p id="" class="recommendation-tip-body">
+						<strong>XML/TEI</strong> is another widely used format, as it provides a comprehensive framework for encoding and describing textual data. Its
+						guidelines include a <a target="_blank" href="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/CC.html">module dedicated to linguistic corpora</a>.
+						For more information about TEI, its tools, and other specialised encoding schemas based on or inspired by TEI, please refer to the <a href="./dse.html">digital scholarly
+						editions recommendations</a>.
+					</p>
+					<ul id="" class="recommendation-tip-body">
+						<li>When detailed encoding is impractical due to time or resource constraints, consider implementing a “light” encoding first (e.g., ALIM, Biblioteca Italiana) and
+							different levels of encoding after, progressively covering more aspects and phenomena.
+						</li>
+						<li>If custom encoding schemas were used, publish and describe them in the documentation.</li>
+					</ul>
+				</div>
+				
+				<div class="recommendation-block">
+					<h2 id="tc-2" class="recommendation">
+						2) Always cite the sources used for text preparation by providing complete bibliographic references and links to descriptive web resources, if available.
+					<a class="anchor-link" aria-label="Link to TEXT COLLECTIONS recommendation 2" href="#tc-2">#</a>
+					</h2>
+					<span class="tag produce">PRODUCE</span>
+					<p id="" class="recommendation-tip-body">
+						A comprehensive set of metadata describing the sources used for text preparation enables users to verify both the editorial work and text quality.</p>
+					<ul id="" class="recommendation-tip-body">
+						<li>Use a metadata standard such as Dublin Core or XML/TEI (<a target="_blank" href="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/HD.html#HD3">&lt;sourceDesc&gt;</a>
+							element in the header).
+						</li>
+						<li>Prefer links to digital libraries, online catalogues and other similar resources that provide persistent identifiers for their objects.</li>
+					</ul>
+					<h3 id="" class="recommendation-tip-title">Metadata</h3>
+					<p id="" class="recommendation-tip-body">
+						For collection metadata, several standards and formats are available alongside TEI:</p>
+					<ul id="" class="recommendation-tip-body">
+						<li><a target="_blank" href="https://cidoc-crm.org/">CIDOC CRM</a>, an ISO standard and reference ontology that provides definitions and formal structure for describing
+							cultural heritage documentation concepts and relationships;</li>
+						<li><a target="_blank" href="http://dublincore.org/">Dublin Core</a>, a simple, generic metadata element set for various digital object types. This standard is widely adopted
+							world-wide;</li>
+						<li><a target="_blank" href="https://www.loc.gov/marc/bibliographic/">MARC 21</a>, a well-established standard for exchanging bibliographic records, developed and maintained
+							by the library community;</li>
+						<li><a target="_blank" href="https://www.loc.gov/standards/mets/">Metadata Encoding and Transmission Standard (METS)</a>, an XML schema for encoding structural metadata about
+							complex digital objects;</li>
+						<li><a target="_blank" href="https://www.loc.gov/standards/mods/">MODS (Metadata Object Description Schema)</a>, an XML schema for descriptive metadata compatible with MARC
+							21 bibliographic format.</li>
+					</ul>
+					<p id="" class="recommendation-tip-body">
+						For more information about metadata standards, refer to the arts and humanities standards listed in the <a target="_blank" href="https://rdamsc.bath.ac.uk/">Metadata Standards Catalog</a>.</p>
+				</div>
+				
+				<div class="recommendation-block">
+					<h2 id="tc-3" class="recommendation">3) Link authors’ and works’ records to corresponding authority records if available, e.g., VIAF, Wikidata.
+					<a class="anchor-link" aria-label="Link to TEXT COLLECTIONS recommendation 3" href="#tc-3">#</a>
+					</h2>
+					<span class="tag plan">PLAN</span> <span class="tag produce">PRODUCE</span>
+					<p id="" class="recommendation-tip-body">
+						By linking the collected works and their authors to authority records, researchers can search across multiple datasets using standardised identifiers,
+						particularly when the collection offers API access.</p>
+					<p id="" class="recommendation-tip-link">Examples in Spadini, Elena, and José Luis Losada Palenzuela. “Re-Using Data from Editions.” <em>Digital Editing and Publishing in the Twenty-First Century</em>, edited by James O’Sullivan et al., 1st ed., Scottish Universities Press, 2025, <a target="_blank" href="https://doi.org/10.62637/sup.GHST9020.8">https://doi.org/10.62637/sup.GHST9020.8</a>.</p>
+					<p id="" class="recommendation-tip-link">Example: <a target="_blank" href="https://catalog.perseus.org/">The Perseus Catalog</a>.</p>
+				</div>
+				
+				<div class="recommendation-block">
+					<h2 id="tc-4" class="recommendation">4) In the documentation, specify collection criteria and editorial criteria, stating the philological methodologies applied and the edition types.
+					<a class="anchor-link" aria-label="Link to TEXT COLLECTIONS recommendation 4" href="#tc-4">#</a>
+					</h2>
+					<span class="tag produce">PRODUCE</span>
+					<p id="" class="recommendation-tip-body">
+						This information helps users understand the relationship between the collected text and its sources, as well as the editorial preparation process. For example, it clarifies whether
+						the text is a transcription of an audio file or performance, a document processed through OCR software, or a critical edition.
+					</p>
+					<ul id="" class="recommendation-tip-body">
+						<li>To specify the edition type, you can reference established definitions from scholarly literature or online resources like the <a target="_blank" href="https://wiki.helsinki.fi/xwiki/bin/view/stemmatology/Parvum%20lexicon%20stemmatologicum/">Parvum Lexicon Stemmatologicum</a>
+							and the <a target="_blank" href="https://lexiconse.uantwerpen.be/">Lexicon of Scholarly Editing</a>.
+						</li>
+						<li>For presenting original documents as digital facsimiles, <a target="_blank" href="https://iiif.io/">IIIF</a> is recommended, particularly for institutions digitizing
+							their textual heritage. <a target="_blank" href="https://iiif.io/guides/guide_for_implementers/">Guide for IIIF implementers.</a></li></ul>
+				</div>
+				
+				<div class="recommendation-block">
+					<h2 id="tc-5" class="recommendation">5) Assign each text a persistent identifier.
+					<a class="anchor-link" aria-label="Link to TEXT COLLECTIONS recommendation 5" href="#tc-5">#</a>
+					</h2>
+					<span class="tag deposit">DEPOSIT</span>
+					<p id="" class="recommendation-tip-body">
+						This enables users to easily cite and reuse individual texts from the collection.</p>
+					<ul id="recommendation-tip-body">
+						<li>When texts are published as individual units in repositories like ILC4CLARIN and Zenodo, PIDs are automatically assigned.</li></ul>
+				</div>
+				
+				<div class="recommendation-block">
+					<h2 id="tc-6" class="recommendation">6) Document changes and current status thoroughly, indicating the number of available texts, the collection’s completeness relative to its scientific objectives and, if applicable, a roadmap about the evolution of the text collection.
+					<a class="anchor-link" aria-label="Link to TEXT COLLECTIONS recommendation 6" href="#tc-6">#</a>
+					</h2>
+					<span class="tag deposit">DEPOSIT</span> <span class="tag disseminate">DISSEMINATE</span>
+					<p id="" class="recommendation-tip-body">
+						Specifying the number of texts in a collection enables users to assess both the corpus’s completeness for their research goals and its overall representativeness.</p>
+					<p id="" class="recommendation-tip-body">
+						For collections containing large volumes of texts, editorial work typically relies on time-limited funding, which leads to periodic additions to and revisions of the
+						collection. Such cases require detailed documentation of the work’s status, including clear descriptions of previous work and future plans. This documentation gives
+						users a clear understanding of the stability and reliability of the collection’s texts.
+					</p>
+					<ul id="" class="recommendation-tip-body">
+						<li>You can format this part of the documentation as a changelog, following the guiding principles of the <a target="_blank" href="https://keepachangelog.com/en/1.1.0/">“keep a changelog project</a>”, in particular marking changes to the texts in the collection as added, removed, changed, or fixed.</li>
+					</ul>
+				</div>
+				
+				<div class="recommendation-block">
+					<h2 id="tc-7" class="recommendation">7) Facilitate text exploration through search functionalities, indexes and sub-collections.
+					<a class="anchor-link" aria-label="Link to TEXT COLLECTIONS recommendation 7" href="#tc-7">#</a>
+					</h2>
+					<span class="tag disseminate">DISSEMINATE</span>
+					<p id="" class="recommendation-tip-body">
+						A well-designed search functionality can help users easily find meaningful content in the text collection, while indexes provide quick access to individual texts or
+						sub-collections.
+					</p>
+					<p id="" class="recommendation-tip-body">
+						Sub-collections can showcase the information contained in the collection, by organising texts by theme, topic, author, genre, etc. To help users engage with the collection,
+						sub-collections should model how users can approach the search functionality with a question or theme to produce meaningful results.
+					</p>
+					<p id="" class="recommendation-tip-link">Examples in Chapman, Alison, et al. “Browse, Search and Serendipity: Building Approachable Digital Editions.” <em>Digital Editing and Publishing in the Twenty-First Century</em>, edited by James O’Sullivan et al., 1st ed., Scottish Universities Press, 2025, <a target="_blank" href="https://doi.org/10.62637/sup.GHST9020.6.%5D(https://doi.org/10.62637/sup.GHST9020.6)">https://doi.org/10.62637/sup.GHST9020.6.</a></p>
+				</div>	
+				
+				<h1 id="" class="">Existing guidelines</h1>
+				<p id="" class="">
+					The <strong><a target="_blank" href="https://www.niso.org/sites/default/files/2017-08/framework3.pdf">National Information Standards Organization (NISO) Framework of
+					Guidance for Building Good Digital Collections (3rd edn, 2007)</a></strong> provides a comprehensive set of principles that in 2007 anticipated the FAIR principles.
+					The NISO principles are organised around four core entities: collections, collected objects, metadata, and “initiatives” (programmes or projects for creating and
+					managing collections). We offer the complete list of principles below. Please refer to the document linked above, for practical guidance on how to achieve these
+					quality requirements.</p>
+				<div type="in-depth">
+					<h4>Collections</h4>
+					<ol>
+						<li>A good digital collection is created according to an explicit collection development policy.</li>
+						<li>Collections should be described so that a user can discover characteristics of the collection, including scope, format, restrictions on access, ownership, and any information significant for determining the collection’s authenticity, integrity, and interpretation.</li>
+						<li>A good collection is curated, which is to say, its resources are actively managed during their entire lifecycle.</li>
+						<li>A good collection is broadly available and avoids unnecessary impediments to use. Collections should be accessible to persons with disabilities, and usable effectively in conjunction with adaptive technologies.</li>
+						<li>A good collection respects intellectual property rights.</li>
+						<li>A good collection has mechanisms to supply usage data and other data that allows standardised measures of usefulness to be recorded.</li>
+						<li>A good collection is interoperable.</li>
+						<li>A good collection integrates into the users own workflow.</li>
+						<li>A good collection is sustainable over time.</li>
+					</ol>
+					<h4>Objects</h4>
+					<ol>
+						<li>A good object exists in a format that supports its intended current and future use.</li>
+						<li>A good object is preservable.</li>
+						<li>A good object is meaningful and useful outside of its local context.</li>
+						<li>A good object will be named with a persistent, globally unique identifier that can be resolved to the current address of the object.</li>
+						<li>A good object can be authenticated.</li>
+						<li>A good object has associated metadata.</li>
+					</ol>
+					<h4>Metadata</h4>
+					<ol>
+						<li>Good metadata conforms to community standards in a way that is appropriate to the materials in the collection, users of the collection, and current and potential future uses of the collection.</li>
+						<li>Good metadata supports interoperability.</li>
+						<li>Good metadata uses authority control and content standards to describe objects and collocate related objects.</li>
+						<li>Good metadata includes a clear statement of the conditions and terms of use for the digital object.</li>
+						<li>Good metadata supports the long-term curation and preservation of objects in collections.</li>
+						<li>Good metadata records are objects themselves and therefore should have the qualities of good objects, including authority, authenticity, archivability, persistence, and unique identification.</li>
+					</ol>
+					<h4>Initiatives</h4>
+					<ol>
+						<li>A good digital initiative has a substantial design and planning component.</li>
+						<li>A good digital initiative has an appropriate level of staffing with necessary expertise to achieve its objectives.</li>
+						<li>A good digital initiative follows best practices for project management.</li>
+						<li>A good digital initiative has an evaluation component.</li>
+						<li>A good digital initiative markets itself and broadly disseminates information about the initiative’s process and outcomes.</li>
+						<li>A good digital initiative considers the entire lifecycle of the digital collection and associated services.</li>
+					</ol>
+				</div>
+
+				<p id="" class="">For developing a complete IT environment to create and manage digital collections, the <a target="_blank" href="https://ccsds.org/wp-content/uploads/gravity_forms/5-448e85c647331d9cbaf66c096458bdd5/2025/01//650x0m3.pdf">Reference model for an Open Archival Information System (OAIS)</a> serves as the standard model. However, this technical and complex work typically extends beyond individual scholars’ scope.</p>
+				<p id="" class=""><a target="_blank" href="http://www.dpconline.org/component/docman/doc_download/1359-dpctw14-02">OAIS Introductory Guide (2nd Edition)</a></p>
+				<p id="" class="">Finally, the RIDE journal offers quality evaluation criteria for digital text collections, providing guidance for collection preparation and management.<a target="_blank" href="https://www.i-d-e.de/publikationen/weitereschriften/criteria-text-collections-version-1-0/"> RIDE Criteria for Reviewing Digital Text Collections, version 1.0</a>.</p>
+			</div>
+		</article>
+	</body>
+</html>

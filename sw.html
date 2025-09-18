@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>Software</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+		<link href="./style.css" rel="stylesheet">
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg bg-body-tertiary">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="./index.html">The ATLAS Guidelines 1.0</a>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				<li class="nav-item">
+				<a class="nav-link active" aria-current="page" href="./about.html">About</a>
+				</li>
+				<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					Browse
+				</a>
+				<ul class="dropdown-menu">
+					<li><a class="dropdown-item" href="./dse.html">Digital Scholarly Editions</a></li>
+					<li><hr class="dropdown-divider"></li>
+					<li><a class="dropdown-item" href="./lod.html">Linked Open Data</a></li>
+					<li><hr class="dropdown-divider"></li>
+					<li><a class="dropdown-item" href="./ontologies.html">Ontologies</a></li>
+					<li><hr class="dropdown-divider"></li>
+					<li><a class="dropdown-item" href="./sw.html">Software</a></li>
+					<li><hr class="dropdown-divider"></li>
+					<li><a class="dropdown-item" href="./tc.html">Text Collections</a></li>
+					<li><hr class="dropdown-divider"></li>
+					<li><a class="dropdown-item" href="./general.html">General Recommendations</a></li>
+				</ul>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" href="./external-resources.html">External Resources</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" href="./credits.html">Credits</a>
+				</li>
+			</ul>
+			</div>
+		</div>
+		</nav>
+		<article id="" class="page sans">
+			<header>
+				<h1 class="page-title">Software</h1>
+			</header><div class="page-body container">
+				<h2 id="" class="disclaimer-title">
+					Disclaimer
+				</h2>
+				<p id="" class="disclaimer-body">
+					The field of software engineering offers numerous guidelines and standards for developing robust and usable software.
+					Your choice of architectures, technologies, and development tools should align with your software’s intended purpose
+					and development context. While our recommendations are general and primarily focus on ensuring software FAIRness—particularly
+					regarding metadata and reusability—we have included references to widely accepted best practices and standards to guide
+					scholars with limited software development experience who wish to enter this field.
+				</p>
+				<div class="recommendation-block">
+					<h2 id="sw-1" class="recommendation">
+						1) Before creating new software from scratch, investigate existing similar solutions and explore opportunities to further
+						develop or adapt them, promoting the reuse and enhancement of existing resources.
+					<a class="anchor-link" aria-label="Link to SW recommendation 1" href="#sw-1">#</a>
+					</h2>
+					<span class="tag identify">IDENTIFY</span>
+					<p id="" class="recommendation-tip-body">Example: <a target="_blank" href="https://github.com/evt-project/evt-viewer">forks on GitHub of the EVT software</a>.</p>
+				</div>
+
+				<div class="recommendation-block">
+					<h2 id="sw-2" class="recommendation">
+						2) Involve domain experts in software design and apply software engineering methodologies and best practices, in order to create
+						robust software that is easy to use, maintain and further develop.
+					<a class="anchor-link" aria-label="Link to SW recommendation 2" href="#sw-2">#</a>
+					</h2>
+					<span class="tag plan">PLAN</span> <span class="tag produce">PRODUCE</span>
+					<ul id="" class="recommendation-tip-body">
+						<li>Utilise documented and shared design patterns (Gamma et al. 1994).</li>
+						<li>When applying the object-oriented programming paradigm, follow the SOLID principles (Silén 2024).</li>
+						<li>For complex software, implement the “domain-driven design” approach (Evans 2004).</li>
+						<li>Organise code into modules to facilitate the reuse of individual components.</li>
+						<li>Adopt DevOps practices to streamline development and deployment processes (plan, code, build and test, release, deploy, operate, and monitor) (Silén 2024).</li>
+						<li>Ensure that all software dependencies, whether libraries, frameworks, or operating system components, are clearly documented and managed.
+							This also includes defining the operational requirements, such as minimum and optimal hardware resources (e.g., CPU, RAM, disk space) needed to ensure that the software works properly.</li>
+						<li>Integrate a structured testing phase as part of the software development process, establishing clear metrics and goals to determine testing success.</li>
+					</ul>
+					<p id="" class="recommendation-tip-body">
+						Developers working in the DH field can follow and join the activities of
+						<a target="_blank" href="https://dh-tech.github.io/">DHTech</a>, an ADHO special interest group aimed at supporting the development and reuse of software in the Digital Humanities.
+					</p>
+				</div>				
+
+				<div class="recommendation-block">
+					<h2 id="sw-3" class="recommendation">
+						3) Define and implement software integration strategies with the goal of achieving a cohesive, scalable and maintainable software
+						ecosystem, minimising the risks of incompatibility and the efforts required for adaptation.
+					<a class="anchor-link" aria-label="Link to SW recommendation 3" href="#sw-3">#</a>
+					</h2>
+					<span class="tag plan">PLAN</span> <span class="tag produce">PRODUCE</span>
+					<p id="" class="recommendation-tip-body">
+						This also allows easy handling of format migration and can be achieved with the following steps:
+					</p>
+					<ul id="" class="recommendation-tip-body">
+						<li>Define integration approaches: whether these will be API-based or exchange files, for example, and prepare standard protocols
+							to facilitate communication.</li>
+						<li>Ensure interoperability and compatibility between different systems by considering standard data formats and structured schemas.</li>
+						<li>Plan strategies for handling errors and malfunctions.</li>
+						<li>Ensure scalability and the ability to handle increased load without compromising overall performance.</li>
+					</ul>
+				</div>
+
+				<div class="recommendation-block">
+					<h2 id="sw-4" class="recommendation">
+						4) Employ standard and non-proprietary programming languages and technologies to develop tools, ensuring greater longevity and
+						easier maintainability.
+					<a class="anchor-link" aria-label="Link to SW recommendation 4" href="#sw-4">#</a>
+					</h2>
+					<span class="tag produce">PRODUCE</span>
+					<ul id="" class="recommendation-tip-body">
+						<li><a target="_blank" href="https://www.w3.org/TR/?status%5B0%5D=standard">W3C standards</a> for web development.</li>
+						<li><a target="_blank" href="https://www.jcp.org/en/home/index">Community Development of Java Technology Specifications</a>.</li>
+					</ul>
+					<p id="" class="recommendation-tip-body">
+						Choose a programming language with mature libraries that can ease the development and maintenance of your software.
+						For example, use Python for NLP software development to easily integrate available tools.
+				</p>
+				</div>
+
+				<div class="recommendation-block">
+					<h2 id="sw-5" class="recommendation">
+						5) When possible, develop in open source and foster collaborative development.
+					<a class="anchor-link" aria-label="Link to SW recommendation 5" href="#sw-5">#</a>
+					</h2>
+					<span class="tag produce">PRODUCE</span> <span class="tag deposit">DEPOSIT</span>
+					<ul id="" class="recommendation-tip-body">
+						<li>Write clear, comprehensive code comments.</li>
+						<li>Provide guidelines for contributing to software development.</li>
+						<li>Utilise repositories such as GitHub that foster collaboration among developers.</li>
+						<li>Follow shared methodologies and strategies for versioning (e.g., <a target="_blank" href="https://semver.org/">Semantic Versioning</a>)
+							and branching (e.g., <a target="_blank" href="https://nvie.com/posts/a-successful-git-branching-model/">GitFlow workflow</a>).</li>
+					</ul>
+				</div>
+
+				<div class="recommendation-block">
+					<h2 id="sw-6" class="recommendation">
+						6) Release software officially through freely accessible channels (e.g., GitHub), providing detailed and user-friendly documentation.
+					<a class="anchor-link" aria-label="Link to SW recommendation 6" href="#sw-6">#</a>
+					</h2>
+					<p id="" class=""><strong>PRODUCE DEPOSIT</strong></p>
+					<p id="" class=""recommendation-tip-body>
+						With each released version, always attach a changelog document that provides a clear and organised chronology of updates,
+						improvements, bug fixes, and other changes.
+					</p>
+					<ul id="" class="recommendation-tip-body">
+						<li>State your software licence clearly.
+							<ul id="">
+								<li><a target="_blank" href="https://opensource.org/licenses">OSI (Open Source Initiative) Approved licences.</a></li>
+								<li><a target="_blank" href="https://spdx.org/licenses/">SPDX licence List</a> a complete list of licences used for software artefacts.</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="recommendation-block">
+					<h2 id="sw-7" class="recommendation">
+						7) Publish your released research software in a trusted scholarly repository (e.g., Zenodo, HAL) with rich metadata to ensure
+						citability and credit to the development team.
+					<a class="anchor-link" aria-label="Link to SW recommendation 7" href="#sw-7">#</a>
+					</h2>
+					<span class="tag deposit">DEPOSIT</span>
+					<ul id="" class="recommendation-tip-body">
+						<li>To prepare metadata, follow the Research Software MetaData Guidelines.</li>
+						<li>Consider depositing your software source code in the <a target="_blank" href="https://www.softwareheritage.org/">Software Heritage Archive</a>.</li>
+					</ul>
+					<p id="" class="recommendation-tip-body">
+						Software Heritage is an international organisation that collects and
+						preserves software in source code form, recognizing software as a valuable part of our cultural heritage that embodies technical and
+						scientific knowledge. You can use Software Heritage services to store and preserve your own software or to search and access archived
+						software. <a target="_blank" href="https://docs.softwareheritage.org/#">Software Heritage Documentation</a>.
+					</p>
+				</div>
+				
+				<h1 id="" class=""><strong>Existing guidelines</strong></h1>
+				<p id="" class="">
+					The <a target="_blank" href="https://doi.org/10.15497/RDA00068">FAIR Principles for Research Software (FAIR4RS Principles)</a>,
+					developed by the FAIR for Research Software Working Group within the Research Data Alliance framework, were designed to improve
+					the sharing and reuse of research software. They expand the FAIR principles, in order to address specific characteristics of software
+					— such as its executability, composite nature, and continuous evolution and versioning — and namely are:
+				</p>
+				<ul id="" class="">
+					<li>“F: Software, and its associated metadata, is easy for both humans and machines to find.</li>
+					<li>A: Software, and its metadata, is retrievable via standardised protocols.</li>
+					<li>I: Software interoperates with other software by exchanging data and/or metadata, and/or through interaction via application programming interfaces (APIs), described through standards.</li>
+					<li>R: Software is both usable (can be executed) and reusable (can be understood, modified, built upon, or incorporated into other software).”</li>
+				</ul>
+				<p id="" class="">
+					<a target="_blank" href="https://fair-impact.github.io/RSMD-guidelines/">The Research Software MetaData Guidelines</a> (RSMD) is a comprehensive
+					set of guidelines aimed at enhancing the findability, accessibility, interoperability, and reusability of research software artifacts,
+					developed within the <a target="_blank" href="https://fair-impact.eu/">FAIR-IMPACT project</a> for the European Open Science Cloud (EOSC).
+					The RSMD guidelines are organised into seven distinct aspects — accessibility and preservation, reference and identification, description
+					and classification, credit and attribution, reuse and legal, re-execute, and general remarks — each with a clear objective and a set of
+					actionable recommendations. Recommendations are categorised into three priority levels: essential, important, and useful.
+					This prioritisation helps emphasise the critical recommendations and ensure the guidelines address key areas effectively.
+				</p>
+				<p id="" class="">
+					<a target="_blank" href="https://fair-impact.github.io/RSMD-guidelines/8.rsmd_checklist/">RSMD checklist: quick overview of the RSMD guidelines</a>.</p>
+				<p id="" class="">
+					To assess the FAIRness level of a software artifact, you can use the <a target="_blank" href="https://fair-impact.eu/metrics-software">metrics</a>
+					outlined within the FAIR-IMPACT project. These metrics emphasise key aspects such as the importance of clearly describing the software’s purpose,
+					defining its development status, and enabling the identification and reuse of individual software components. You may find the complete list below.
+				</p>
+				<div type="in-depth">					
+					<ol id="">
+						<li>Does the software have a globally unique and persistent identifier?</li>
+						<li>Do the different components of the software have their own identifiers?</li>
+						<li>Does each version of the software have a unique identifier?</li>
+						<li>Does the software include descriptive metadata which helps define its purpose?</li>
+						<li>Does the software include development metadata which helps define its status?</li>
+						<li>Does the software include metadata about the contributors and their roles?</li>
+						<li>Does the software metadata include the identifier for the software?</li>
+						<li>Does the software have a publicly available, openly accessible and persistent metadata record?</li>
+						<li>Is the software developed in a code repository / forge that uses standard communications protocols?</li>
+						<li>Are the formats used by the data consumed or produced by the software open and a reference provided to the format?</li>
+						<li>Does the software use open APIs that support machine-readable interface definition?</li>
+						<li>Does the software provide references to other objects that support its use?</li>
+						<li>Does the software describe what is required to use it?</li>
+						<li>Does the software come with test cases to demonstrate it is working?</li>
+						<li>Does the software source code include licensing information for the software and any bundled external software?</li>
+						<li>Does the software metadata record include licensing information?</li>
+						<li>Does the software include provenance information that describe the development of the software?</li>
+					</ol>
+					<p id="" class="">Chue Hong, Neil, et al. <em>D5.2 - Metrics for Automated FAIR Software Assessment in a Disciplinary Context</em>. Oct. 2023, <a target="_blank" href="https://doi.org/10.5281/ZENODO.10047401">https://doi.org/10.5281/ZENODO.10047401</a>.</p>
+				</div>
+			</div>
+		</article>
+	</body>
+</html>
