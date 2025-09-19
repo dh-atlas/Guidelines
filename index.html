@@ -54,7 +54,7 @@
 		<header>
 			<div class="row col-12">
 				<div class="main-title container col-lg-6 col-md-12 col-sm-12">
-					<div class="main-title col-10">
+					<div class="main-title col-12">
 						<span class="page-title">
 							The ATLAS Guidelines<span class="dot">.</span>
 						</span>
@@ -63,50 +63,51 @@
 						</p>
 						
 						<div class="button-container">
-							<a href="./general.html" class="button-glass">Explore</a>
-							<a href="./general.html" class="button-atlas">ATLAS</a>
+							<a class="button-glass explore-button" data-target="introduction">About</a>
+							<a class="button-atlas explore-button" data-target="explore">Explore</a>
 						</div>
 					</div>
 				</div>
 				<div class="carousel-container col-lg-6 col-md-12 col-sm-12">
 					<button class="carousel-btn prev">&#10094;</button>
 					<div class="recommendation-links">
-						<div class="recommendation-link active">
+						<div class="recommendation-link active lightbulb">
 							<h3>General Recommendations</h3>
 							<p>From FAIR to top-notch: tips to further enhance research products’ quality</p>
 							<a href="./general.html" class="carousel-btn-link">Go to page</a>
 						</div>
 
-						<div class="recommendation-link">
+						<div class="recommendation-link laptop">
 							<h3>Digital Scholarly Editions</h3>
 							<p>Guidelines for building and maintaining digital scholarly editions</p>
 							<a href="./dse.html" class="carousel-btn-link">Go to page</a>
 						</div>
 
-						<div class="recommendation-link">
+						<div class="recommendation-link menu-book">
+							<h3>Text Collections</h3>
+							<p>Managing and sharing curated text collections in FAIR ways</p>
+							<a href="./tc.html" class="carousel-btn-link">Go to page</a>
+						</div>
+
+						<div class="recommendation-link share">
 							<h3>Linked Open Data</h3>
 							<p>Best practices for producing and sharing Linked Open Data</p>
 							<a href="./lod.html" class="carousel-btn-link">Go to page</a>
 						</div>
 
-						<div class="recommendation-link">
+						<div class="recommendation-link account-tree">
 							<h3>Ontologies</h3>
 							<p>Creating and publishing ontologies for knowledge representation</p>
 							<a href="./ontologies.html" class="carousel-btn-link">Go to page</a>
 						</div>
 
-						<div class="recommendation-link">
+						<div class="recommendation-link code">
 							<h3>Software</h3>
 							<p>Recommendations for sustainable and reusable research software</p>
 							<a href="./sw.html" class="carousel-btn-link">Go to page</a>
 						</div>
 
-						<div class="recommendation-link">
-							<h3>Text Collections</h3>
-							<p>Managing and sharing curated text collections in FAIR ways</p>
-							<a href="./tc.html" class="carousel-btn-link">Go to page</a>
-						</div>
-						</div>
+					</div>
 
 					<button class="carousel-btn next">&#10095;</button>
 				</div>
@@ -114,26 +115,44 @@
 		</header>
 		<article id="" class="page sans">
 			<section class="row col-lg-12">
-				<section class="col-lg-6 col-md-6 col-sm-10" style="padding-right: 3em;">
+				<section class="col-lg-6 col-md-6 col-sm-10" style="padding-right: 3em;" id="introduction">
 					<h1>
 						<span class="topic">WHAT DO WE DO</span><br>
-						Supporting FAIR Data in the Humanities
+						Supporting FAIR Digital Research Products in the Humanities
 					</h1>
 					<p>
-						The ALLEA report “Sustainable and FAIR Data Sharing in the Humanities” provides key recommendations to make digital data in the humanities “Findable, Accessible, Interoperable and Reusable”, in line with the FAIR principles. The document is designed as a practical guide to help scholars, research funders, professionals and policymakers navigate the shift towards a sustainable data sharing culture.
+						The ATLAS guidelines offer practical advice <strong>for Digital Humanities scholars</strong> who want to learn about or develop their understanding
+						of the <a target="_blank" href="https://doi.org/10.1038/sdata.2016.18">FAIR principles</a>,
+						with a focus on how to implement them when producing research outputs. The guidelines are also suitable for scholars new to DH who
+						wish to explore the field’s distinctive research products and their respective best practices and reference standards.					</p>
+					<p>
+						Based on the extensive recommendations of the ALLEA E-Humanities Working Group,
+						"<a target="_blank" href="https://doi.org/10.7486/DRI.tq582c863"><strong>Sustainable and FAIR Data Sharing in the Humanities</strong></a>", the ATLAS guidelines
+						provide <strong>specific advice on five common types of DH output: digital scholarly editions, text collections, software,
+						ontologies and linked open data</strong>. The guidelines are organised around the five <strong>phases of digital object creation: identifying
+						and planning; modelling and formatting; and publishing and depositing</strong>. They also include additional recommendations for improving
+						the quality of research products beyond basic FAIR compliance, to make outputs easier to cite, use and evaluate. By implementing
+						these guidelines, scholars can create research products that are technically compliant with FAIR principles and genuinely valuable
+						to the broader research community. This ensures their work remains accessible, usable, and relevant in the evolving digital landscape
+						of humanities research.
 					</p>
-					<p class="reference">
-						<span class="bold">Source: </span> <a href="https://doi.org/10.7486/DRI.tq582c863" target="_blank">Sustainable and FAIR Data Sharing in the Humanities: Recommendations of the ALLEA Working Group E-Humanities </a>
+					<p>
+						The ATLAS guidelines were developed within the PRIN 2022 ATLAS project, a collaboration between the University of Bologna, Ca’ Foscari University of Venice, and the CNR Unit of Pisa (comprising the Institute for Computational Linguistics ‘A. Zampolli’—ILC—and the Institute of Information Science and Technologies ‘Alessandro Faedo’—ISTI). 
 					</p>
+					<div class="button-container">
+						<a class="button-dark" href="about.html">Read More</a>
+						<a class="button-dark" href="credits.html">People</a>
+					</div>
 				</section>
-				<section class="col-lg-6 col-md-6 col-sm-10">
+				<section class="col-lg-6 col-md-6 col-sm-10 sticky-top acc-section">
 					<div class="acc">
 						<div class="acc-item">
 						<button class="acc-header">
 							Identify <span class="icon">+</span>
 						</button>
 						<div class="acc-content">
-							<p>Contenuto extra per la sezione 1.</p>
+							<p>The first step in creating FAIR research products is to identify your own research data, the relevant community standards and best practices,
+					and any existing useful resources, such as tools and datasets.</p>
 						</div>
 						</div>
 
@@ -142,34 +161,37 @@
 							Plan <span class="icon">+</span>
 						</button>
 						<div class="acc-content">
-							<p>Contenuto extra per la sezione 2.</p>
+							<p>The next step is planning. If you keep the FAIR principles in mind and are clear about your research goals from the outset, you will
+					have a better understanding of what to consider at every stage, from data collection to publication and maintenance.</p>
 						</div>
 						</div>
 
 						<div class="acc-item">
 						<button class="acc-header">
-							Collect/Produce & Structure & Store <span class="icon">+</span>
+							Produce <span class="icon">+</span>
 						</button>
 						<div class="acc-content">
-							<p>Contenuto extra per la sezione 3.</p>
+							<p>The choices made at the third stage are crucial for ensuring the FAIRness of the data. It is important to consider all the options
+					relating to data formats and metadata standards, and to document your research workflow.</p>
 						</div>
 						</div>
 
 						<div class="acc-item">
 						<button class="acc-header">
-							Deposit for Preservation, Cite & Share <span class="icon">+</span>
+							Deposit <span class="icon">+</span>
 						</button>
 						<div class="acc-content">
-							<p>Contenuto extra per la sezione 4.</p>
+							<p>Once the research product is ready, it is important to know how to guarantee long-term access to it, as well as how to provide the
+					necessary metadata and information for its proper use.</p>
 						</div>
 						</div>
 
 						<div class="acc-item">
 						<button class="acc-header">
-							Dissemination <span class="icon">+</span>
+							Disseminate <span class="icon">+</span>
 						</button>
 						<div class="acc-content">
-							<p>Contenuto extra per la sezione 5.</p>
+							<p>The final step focuses on how to help your target audience (re-)use and engage with your research product.</p>
 						</div>
 						</div>
 					</div>
@@ -177,7 +199,7 @@
 			</section>
 			<hr>
 			<section class="row col-lg-12">
-				<section class="col-lg-12 col-md-12 col-sm-12" style="padding-right: 3em;">
+				<section class="col-lg-12 col-md-12 col-sm-12" style="padding-right: 3em;" id="explore">
 					<h1>
 						<span class="topic">WHAT DO WE FOCUS ON</span><br>
 						Exploring Practices Across <span style="color: var(--atlas)">Research Products</span>
@@ -222,22 +244,65 @@
 						<div class="row-content col-12">
 						<div class="card-content-box">
 							<div class="card-content active" id="content1">
-							<p>Contenuto di General Recommendations (già attivo)</p>
+								<h2>General Recommendations</h2>
+								<p>These <strong>cross-cutting recommendations</strong> focus on practical steps that <strong>make any research product easier to find, cite, and use</strong>.
+						They propose <strong>creating a clear landing page</strong> with access points, licence, version, and status; <strong>offering full credits and citation guidance</strong> with persistent
+						identifiers; <strong>documenting design, tools, and methods</strong> with maintainable, multi-format documentation; and providing <strong>English metadata</strong> to reach wider
+						audiences. The guidance emphasizes <strong>low-cost, sustainable publishing options</strong> and points to readily available platforms and tool directories so that
+						teams can keep information current without building bespoke sites. The result is research outputs that are discoverable, citable, and usable beyond
+						their original context, increasing impact and long-term value across disciplines.</p>
 							</div>
 							<div class="card-content" id="content2">
-							<p>Contenuto di Digital Scholarly Editions</p>
+								<h2>Digital Scholarly Editions</h2>
+							<p>This guide outlines how to <strong>plan an editorial workflow</strong> and select <strong>interoperable, standards-based tools</strong>; <strong>include document images</strong> via IIIF;
+					<strong>enrich texts semantically</strong> by linking entities to authoritative LOD sources; encode texts and metadata with <strong>TEI</strong> and related domain
+					schemas; customize and publish machine-readable <strong>schemas</strong>; <strong>document</strong> textual tradition, methodology, and editorial choices; give
+					<strong>transparent credit</strong> to editors and technical contributors; <strong>version</strong> the edition and its by-products for citability and trust; facilitate
+					reuse by offering <strong>downloads</strong> in open, standard formats (and accessible PDFs where relevant); ensure long-term preservation and
+					discoverability through <strong>trusted repositories and field-specific catalogues</strong>; and adopt <strong>sustainable</strong> visualization and <strong>low-overhead</strong>
+					publishing solutions with indexing and search for extensive texts.</p>
 							</div>
 							<div class="card-content" id="content3">
-							<p>Contenuto di Text Collections</p>
+								<h2>Text Collections</h2>
+							<p>These recommendations provide a practical roadmap for designing, documenting, and disseminating FAIR-aligned digital text collections.
+					The guidance prioritizes <strong>interoperable, standards-based formats</strong> (plain text with structured metadata, XML/TEI and related schemas),
+					<strong>rigorous source citation</strong> with <strong>links to authoritative catalogues</strong>, and authority control for authors and works via
+					persistent identifiers and LOD services. It outlines how to <strong>state editorial and collection criteria</strong>, adopt <strong>IIIF</strong>
+					for facsimiles, <strong>assign per-text PIDs</strong>, and maintain <strong>transparent versioning, status, and roadmaps</strong>.
+					Finally, it highlights user-facing access through search, indexes, and thematic sub-collections, drawing on established frameworks such as
+					NISO, OAIS, and RIDE to ensure preservation, discoverability, and reuse across disciplines.</p>
 							</div>
 							<div class="card-content" id="content4">
-							<p>Contenuto di Linked Open Data</p>
+								<h2>Linked Open Data</h2>
+							<p>These recommendations provide a practical framework for creating, publishing, and sustaining FAIR-aligned Linked Open Datasets (LODs) in
+					the humanities and cultural heritage. The guidance prioritizes <strong>reuse of existing models, vocabularies, and tools</strong>;
+					<strong>formalizing collection-specific data models</strong> as ontologies when needed; and <strong>rich interlinking</strong> with external
+					authority records to maximize interoperability and context. It emphasizes <strong>explicit provenance</strong> (e.g., PROV),
+					<strong>stable URI patterns</strong>, <strong>multi-format publication</strong> in trusted repositories, and registration in
+					LOD-specific catalogs. Finally, it promotes <strong>both expert and broad public access</strong> through SPARQL endpoints with worked examples
+					and user-friendly interfaces. Together, these practices yield datasets that are discoverable, well-documented, interoperable,
+					preservable, and reusable across platforms and disciplines.</p>
 							</div>
 							<div class="card-content" id="content5">
-							<p>Contenuto di Ontologies</p>
+								<h2>Ontologies</h2>
+							<p>These recommendations outline a practical pathway for designing, publishing, and sustaining FAIR-aligned ontologies for the humanities and
+					cultural heritage. They emphasize <strong>reuse of established models and vocabularies</strong>, <strong>participatory design</strong>, and adherence to proven <strong>methodologies and design patterns</strong>.
+					The guidance surveys W3C <strong>standards for representation and access</strong> (RDF, OWL, Turtle, JSON-LD, SKOS, SPARQL), highlights tools and
+					workflows for implementation and documentation, and promotes interoperability via <strong>explicit mappings</strong> and crosswalk standards.
+					It also addresses long-term stewardship through <strong>persistent, stable URIs</strong>, publication in <strong>robust services and repositories</strong>,
+					and <strong>regular link maintenance</strong>. Together, these practices support ontologies that are interoperable, well-documented, preservable, and readily
+					reusable across projects and platforms.</p>
 							</div>
 							<div class="card-content" id="content6">
-							<p>Contenuto di Software</p>
+								<h2>Software</h2>
+							<p>These recommendations support the design, release, and long‑term stewardship of FAIR research software in Digital Humanities.
+					The guidance prioritizes <strong>reuse of existing solutions</strong> before new development, <strong>community‑informed design</strong>
+					using <strong>proven software engineering practices</strong>, and <strong>robust integration strategies</strong> based on standard interfaces
+					and data formats. It encourages the use of <strong>open</strong>, widely supported <strong>technologies</strong>, collaborative
+					<strong>open‑source workflows</strong> with clear contribution, branching, and versioning models, and comprehensive,
+					<strong>user‑oriented documentation</strong>. For dissemination and credit, it recommends <strong>official releases</strong> with licences, changelogs,
+					and deposition in trusted repositories with rich metadata, complemented by preservation via Software Heritage and alignment with FAIR4RS and RSMD.
+					The result is software that is discoverable, interoperable, citable, maintainable, and reusable across projects and time.</p>
 							</div>
 						</div>
 						</div>
@@ -245,13 +310,36 @@
 				</section>
 			</section>
 		</article>
-		<footer>
-			<div class="logos">
-				<img src="img/ue.png" alt="Logo Finanziato dall'Unione Europea" aria-label="Finanziato dall'Unione Europea"/>
-				<span class="line"></span>
-				<img src="./img/mur.png" alt="Logo Ministero dell'Università e della Ricerca" aria-label="Ministero dell'Università e della Ricerca"/>
-				<span class="line"></span>
-				<img src="img/italia.png" alt="Logo Italia Domani" aria-label="Italia Domani"/>
+		<footer class="bg-dark py-4">
+			<div class="container">
+				<div class="row align-items-center justify-content-center text-center">
+				
+				<!-- Logo UE -->
+				<div class="col-12 col-md-auto mb-3 mb-md-0 d-flex align-items-center justify-content-center">
+					<img src="img/ue.png" alt="Logo Finanziato dall'Unione Europea" aria-label="Finanziato dall'Unione Europea" class="img-fluid" style="max-height:70px;">
+				</div>
+
+				<!-- Linea -->
+				<div class="d-none d-md-flex col-md-auto px-2">
+					<span class="border-start border-white" style="height:70px;"></span>
+				</div>
+
+				<!-- Logo MUR -->
+				<div class="col-12 col-md-auto mb-3 mb-md-0 d-flex align-items-center justify-content-center">
+					<img src="./img/mur.png" alt="Logo Ministero dell'Università e della Ricerca" aria-label="Ministero dell'Università e della Ricerca" class="img-fluid" style="max-height:70px;">
+				</div>
+
+				<!-- Linea -->
+				<div class="d-none d-md-flex col-md-auto px-2">
+					<span class="border-start border-white" style="height:70px;"></span>
+				</div>
+
+				<!-- Logo Italia -->
+				<div class="col-12 col-md-auto d-flex align-items-center justify-content-center">
+					<img src="img/italia.png" alt="Logo Italia Domani" aria-label="Italia Domani" class="img-fluid" style="max-height:70px;">
+				</div>
+
+				</div>
 			</div>
 		</footer>
 	</body>

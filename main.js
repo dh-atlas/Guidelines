@@ -47,4 +47,15 @@ $(document).ready(function () {
         $(".card-content").removeClass("active");
         $("#" + contentId).addClass("active");
     });
+
+
+    $(".explore-button").click(function() {
+        var target = $("#"+$(this).data("target"));
+        var targetOffset = target.offset().top;
+        window.scrollTo({
+            top: targetOffset,
+            behavior: "smooth"
+        });
+    });
+
 });

@@ -13,7 +13,6 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 		<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp" rel="stylesheet">
 		<script src="main.js"></script>
-	</head>
 	<body>
 		<nav class="custom-navbar navbar navbar-expand-lg">
 			<div class="container-fluid">
@@ -51,10 +50,43 @@
 			</div>
 		</nav>
 		<article id="" class="page sans">
-			<div class="page-body container">
-				<h2 id="" class="">About</h2>
+			<div class="page-body container col-9">
+				<section class="col-lg-6 col-md-6 col-sm-10" style="padding-right: 3em;">
+					<h1 class="page-title">
+						<span class="topic">Project Overview</span><br>
+						ABOUT
+					</h1>
+				</section>
+					<p id="" class="">
+						The ATLAS guidelines were developed within the PRIN 2022 <a target="_blank" href="https://dh-atlas.github.io/">ATLAS project</a>,
+						a joint effort of the University of Bologna, the Ca’ Foscari University of Venice, and the CNR Unit of Pisa
+						(comprising the Institute for Computational Linguistics “A. Zampolli”—ILC—and the Institute of Information Science and
+						Technologies “Alessandro Faedo”—ISTI). ATLAS has two main objectives:
+					</p>
+					<ol id="">
+						<li>creating a <a target="_blank" href="https://projects.dharc.unibo.it/atlas/">catalogue of Digital Humanities Research on Italian Cultural Heritage</a>,
+							using semantic web technologies to establish a framework that captures diverse DH research outputs, and
+						</li>
+						<li>developing clear and practical guidelines for creating high-quality scholarly data.</li>
+					</ol>
+					<div type="in-depth">
+					<p id="" class="">
+						For a full presentation of the ATLAS project, its outputs, and methodologies, refer to the
+						<a target="_blank" href="https://doi.org/10.5281/zenodo.14169356">whitebook</a> and the following publications:
+					</p>
+					<ul id="" class="bulleted-list">
+						<li>Bardi, Alessia, Marilena Daquino, Riccardo Del Gratta, Angelo Mario Del Grosso, and Roberto Rosselli Del Turco. ’The ATLAS of Italian Digital Humanities: A Knowledge Graph of Digital Scholarly Research on Italian Cultural Heritage’, 11 June 2024.
+							<a target="_blank" href="https://doi.org/10.5281/ZENODO.11569280">https://doi.org/10.5281/ZENODO.11569280</a>.
+						</li>
+						<li>
+							Daquino, Marilena, Alessia Bardi, Marina Buzzoni, Riccardo Del Gratta, Angelo Mario Del Grosso, Franz Fischer, Francesca Tomasi,
+							and Roberto Rosselli Del Turco. ’The ATLAS: A Knowledge Graph of Digital Scholarly Research on Italian Cultural Heritage’, 2024.
+							<a target="_blank" href="https://doi.org/10.6092/unibo/amsacta/7927">https://doi.org/10.6092/unibo/amsacta/7927</a>.
+						</li>
+					</ul>
+				</div>
 				<p id="" class="">
-					These guidelines are built upon the existing recommendations of the ALLEA Working Group for E-Humanities:
+					The ATLAS guidelines are built upon the existing recommendations of the ALLEA Working Group for E-Humanities:
 					<strong><a target="_blank" href="https://doi.org/10.7486/DRI.tq582c863">Sustainable and FAIR Data Sharing in the Humanities</a></strong>.
 				</p>
 				<p id="" class="">
@@ -75,7 +107,7 @@
 				</p>
 				<figure id="" class="image">
 					<img style="width:700px" src="./img/ALLEA_framework.png"/>
-					<span id="" class="img_caption"><strong class="accent">Figure 1</strong> - Life cycle of FAIR research data in the humanities. Credits: ALLEA E-Humanities Working Group.</span>
+					<span id="" class="img_caption"><strong>Figure 1</strong> - Life cycle of FAIR research data in the humanities. Credits: ALLEA E-Humanities Working Group.</span>
 				</figure>
 				<p id="" class="">
 					To help you identify which ALLEA phases each recommendation corresponds to, you will find the following tags next to each
@@ -126,35 +158,35 @@
 						<li>Involve library/repository staff and consider RDM costs early on.</li>
 					</ul>
 					<h3>COLLECT, PRODUCE, STRUCTURE, STORE</h3>
-					<h4>Data Types &amp; Formats</h4>
+					<h5>Data Types &amp; Formats</h5>
 					<ul id="">
 						<li>Choose community-accepted formats and those preferred by preservation repositories.</li>
 						<li>Check what other researchers use for similar data.</li>
 					</ul>
-					<h4>Metadata</h4>
+					<h5>Metadata</h5>
 					<ul id="">
 						<li>Follow metadata standards and ensure consistency.</li>
 						<li>Use controlled vocabularies, PIDs (Persistent Identifiers), and make metadata rich and machine-readable.</li>
 					</ul>
-					<h4>Data Models</h4>
+					<h5>Data Models</h5>
 					<ul id="">
 						<li>Apply FAIR principles to data modeling.</li>
 						<li>Use open, human- and machine-readable standards (e.g., XML, RDF).</li>
 						<li>Normalise data and use identifiers like DOI, VIAF.</li>
 						<li>Align data models with the DMP and document thoroughly.</li>
 					</ul>
-					<h4>Legal Aspects</h4>
+					<h5>Legal Aspects</h5>
 					<ul id="">
 						<li>Address legal issues early, including consent, copyright, and anonymisation.</li>
 						<li>Get legal support from your institution or library.</li>
 					</ul>
-					<h4>Licences</h4>
+					<h5>Licences</h5>
 					<ul id="">
 						<li>Identify data ownership before licensing.</li>
 						<li>Prefer open licences (e.g., CC BY, CC0), avoid overly restrictive ones (e.g., NC, ND).</li>
 						<li>Use licence selector tools and make licences machine-readable.</li>
 					</ul>
-					<h4>Trusted Repositories &amp; PIDs</h4>
+					<h5>Trusted Repositories &amp; PIDs</h5>
 					<ul id="">
 						<li>Use certified repositories (e.g., CoreTrustSeal).</li>
 						<li>Repositories should assign PIDs and allow rich metadata.</li>
