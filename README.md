@@ -2,6 +2,10 @@
 
 **Guidelines and Best Practices for Creating FAIR Research Products in the Digital Humanities**
 
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17167253.svg)](https://doi.org/10.5281/zenodo.17167253)
+
+
 ---
 
 ## Description
